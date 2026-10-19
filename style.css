@@ -1,0 +1,323 @@
+/* ============================================================
+   Global & Typography
+   ============================================================ */
+
+QWidget {
+    background-color: #0b0d13;
+    color: #e2e8f0;
+    font-family: "Segoe UI Variable Text", "Segoe UI", -apple-system, BlinkMacSystemFont, "Inter", Roboto, sans-serif;
+    font-size: 13.5px;
+}
+
+/* ============================================================
+   Header Card
+   ============================================================ */
+
+#header {
+    background-color: #131622;
+    border: 1px solid #1f2536;
+    border-radius: 12px;
+}
+
+#headerIcon {
+    background: transparent;
+    font-size: 16px;
+    color: #818cf8;
+}
+
+#title {
+    background: transparent;
+    font-size: 15px;
+    font-weight: 700;
+    color: #f8fafc;
+    letter-spacing: 0.3px;
+}
+
+#headerBadge {
+    background-color: #1e2438;
+    border: 1px solid #333d5c;
+    border-radius: 5px;
+    color: #818cf8;
+    font-size: 9.5px;
+    font-weight: 700;
+    padding: 2px 6px;
+    letter-spacing: 0.8px;
+}
+
+#audioPill {
+    background-color: #161a27;
+    border: 1px solid #252c3f;
+    border-radius: 14px;
+}
+
+#deviceLabel {
+    background: transparent;
+    color: #94a3b8;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+#audioDot {
+    background: transparent;
+    color: #4b5563;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#audioDot[active="true"] {
+    background: transparent;
+    color: #10b981;
+}
+
+
+/* ============================================================
+   Section Headers & Labels
+   ============================================================ */
+
+#sectionLabel {
+    color: #818cf8;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+}
+
+#hint {
+    color: #64748b;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+#statusPill {
+    background-color: #161926;
+    border: 1px solid #242a3d;
+    border-radius: 5px;
+    color: #94a3b8;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 2px 8px;
+}
+
+
+/* ============================================================
+   Text Containers (Cards)
+   ============================================================ */
+
+#textContainer {
+    background-color: #121520;
+    border: 1px solid #1f2434;
+    border-radius: 11px;
+}
+
+#textContainer:hover {
+    border: 1px solid #2b334a;
+}
+
+
+/* ============================================================
+   Text Edit Inputs
+   ============================================================ */
+
+QTextEdit {
+    background-color: transparent;
+    border: none;
+    color: #f1f5f9;
+    selection-background-color: #3b4265;
+    selection-color: #ffffff;
+    padding: 6px;
+    font-size: 13.5px;
+    line-height: 1.45;
+}
+
+QTextEdit:focus {
+    border: none;
+}
+
+
+/* ============================================================
+   Minimalist Modern Scrollbar
+   ============================================================ */
+
+QTextEdit QScrollBar:vertical {
+    width: 6px;
+    background: transparent;
+    margin: 3px 1px;
+}
+
+QTextEdit QScrollBar::handle:vertical {
+    background: #2b3247;
+    border-radius: 3px;
+    min-height: 25px;
+}
+
+QTextEdit QScrollBar::handle:vertical:hover {
+    background: #3e4866;
+}
+
+QTextEdit QScrollBar::add-line:vertical,
+QTextEdit QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+
+/* ============================================================
+   Buttons Base
+   ============================================================ */
+
+QPushButton {
+    font-family: "Segoe UI Variable Text", "Segoe UI", sans-serif;
+    outline: none;
+}
+
+
+/* ============================================================
+   Primary Action Button (Start/Stop Listening)
+   ============================================================ */
+
+#primaryButton {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #4f46e5, stop:1 #4338ca);
+    border: 1px solid #6366f1;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 13.5px;
+    font-weight: 600;
+    padding: 9px 18px;
+}
+
+#primaryButton:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #5c53f0, stop:1 #4b40dc);
+    border: 1px solid #818cf8;
+}
+
+#primaryButton:pressed {
+    background: #3730a3;
+    border: 1px solid #4f46e5;
+}
+
+#primaryButton[listening="true"] {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #dc2626, stop:1 #b91c1c);
+    border: 1px solid #ef4444;
+    color: #ffffff;
+}
+
+#primaryButton[listening="true"]:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #ef4444, stop:1 #dc2626);
+    border: 1px solid #f87171;
+}
+
+
+/* ============================================================
+   Secondary Button (Transparent / Click-Through)
+   ============================================================ */
+
+#secondaryButton {
+    background-color: #161926;
+    border: 1px solid #262c3f;
+    border-radius: 10px;
+    color: #cbd5e1;
+    font-size: 13.5px;
+    font-weight: 600;
+    padding: 9px 16px;
+}
+
+#secondaryButton:hover {
+    background-color: #1e2335;
+    border: 1px solid #38425d;
+    color: #f8fafc;
+}
+
+#secondaryButton:pressed {
+    background-color: #121520;
+}
+
+#secondaryButton[transparent="true"] {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #7c3aed, stop:1 #6d28d9);
+    border: 1px solid #8b5cf6;
+    color: #ffffff;
+}
+
+#secondaryButton[transparent="true"]:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #8b5cf6, stop:1 #7c3aed);
+    border: 1px solid #a78bfa;
+}
+
+
+/* ============================================================
+   AI Trigger Button (Ask AI)
+   ============================================================ */
+
+#aiSmallButton {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #2563eb, stop:1 #1d4ed8);
+    border: 1px solid #3b82f6;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 12.5px;
+    font-weight: 600;
+    padding: 0px 16px;
+}
+
+#aiSmallButton:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #3b82f6, stop:1 #2563eb);
+    border: 1px solid #60a5fa;
+}
+
+#aiSmallButton:pressed {
+    background: #1e40af;
+}
+
+#aiSmallButton:disabled {
+    background: #1c202e;
+    border: 1px solid #282e42;
+    color: #64748b;
+}
+
+
+/* ============================================================
+   Small Action Buttons (Copy, Clear)
+   ============================================================ */
+
+#smallActionButton {
+    background-color: #161a27;
+    border: 1px solid #242b3e;
+    border-radius: 6px;
+    color: #94a3b8;
+    font-size: 11.5px;
+    font-weight: 500;
+    padding: 5px 11px;
+}
+
+#smallActionButton:hover {
+    background-color: #202638;
+    border-color: #38425e;
+    color: #f1f5f9;
+}
+
+#smallActionButton:pressed {
+    background-color: #121520;
+}
+
+
+/* ============================================================
+   Status & Footer Bar
+   ============================================================ */
+
+#footerBar {
+    background-color: #10131d;
+    border: 1px solid #1c2130;
+    border-radius: 9px;
+}
+
+#status {
+    background: transparent;
+    color: #10b981;
+    font-size: 11.5px;
+    font-weight: 600;
+    padding: 2px 4px;
+}
+
+#shortcutsHint {
+    background: transparent;
+    color: #475569;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 2px 4px;
+}
